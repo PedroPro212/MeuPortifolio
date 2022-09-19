@@ -43,6 +43,83 @@
             padding-top:6px;
             padding-left:18px;
         }
+        .download:hover{
+            width:210px;
+            height:40px;
+            padding-left:24px;
+            padding-top:10px;
+            font-size:15px;
+            transition:width .3s;
+            transition:height .3s;
+            transition:font-size .3s;
+            border-radius:25px;
+        }
+
+        .quadro{
+            margin-top:100px;
+            margin-left:110px;
+            border-style:solid; 
+            border-color:#03CFB0; 
+            border-width:2px;
+            width:244px;
+        }
+        .quadro:hover{
+            margin-top:50px;
+            transition:margin-top .5s;
+        }
+        .quadro img{
+            margin-top:10px;
+        }
+        .quadro h3{
+            font-family: 'Secular One', sans-serif; 
+            color:white; 
+            margin-top:4px;
+            margin-bottom:15px;
+        }
+        .quadro p{
+            font-family: 'Secular One', sans-serif;
+            color:white;
+            margin-top:4px;
+            margin-bottom:15px;
+            font-size:15px;
+        }
+        .botao_SaibaMais{
+            width:80%;
+            margin-bottom:10px; 
+            border-style:solid; 
+            border-color:#03CFB0; 
+            border-width:2px; 
+            border-radius:2px;
+            font-family: 'Secular One', sans-serif; 
+            color:white;
+        }
+        .botao_SaibaMais a{
+            text-transform:uppercase;
+            text-decoration:none;
+        }
+        .botao_SaibaMais p{
+            padding-top:5px;
+        }
+
+        .conteudo_borda{
+            width:50px;
+            height:50px;
+            background-color:#03CFB0;
+            border-radius:50%;
+            border-width:1px;
+            border-color:white;
+            border-style:solid;
+        }
+        .conteudo img{
+
+        }
+
+        .informacoes h3{
+            margin-top:20px;
+        }
+        .informacoes p{
+            margin-bottom:25px;
+        }
     </style>
 
     <div class="container">
@@ -53,7 +130,7 @@
             <img runat="server" src="../imgs/map.png" width="22" style="float:left; margin-right:5px;" /><p>Paraisópolis Mg, Brasil</p>
             <img runat="server" src="../imgs/phone.png" width="22" style="float:left; margin-right:5px;" /><p>+55 (35) 997444848</p>
             <img runat="server" src="../imgs/email.png" width="22" style="float:left; margin-right:5px;" /><p>desenvolvedordesistemas22@gmail.com</p>
-            <div class="row" style="margin-left:0px; margin-top:10px;">
+            <div class="mini_logos row" style="margin-left:0px; margin-top:10px;">
                 <img runat="server" src="../imgs/instagram.png" width="24" />
                 <img runat="server" src="../imgs/linkedin.png" width="24" />
                 <img runat="server" src="../imgs/github.png" width="24" />
@@ -73,8 +150,8 @@
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-6">
-                <h3 style="margin-bottom:15px;">Siga-me</h3>
-                <div style="width:80%;"><p>Olá. Meu nome é Pedro, sou Desenvolvedor de Sistemas. Atua principalmente na Web, com HTML, CSS,  JavasCript, C#, Python e entre outras tecnologias....</p></div>
+                <h3 style="margin-bottom:15px; filter:drop-shadow(black 2px 2px 2px)">Follow me</h3>
+                <div style="width:80%; font-size:15px;"><p>Olá. Meu nome é Pedro, sou Desenvolvedor de Sistemas. Atua principalmente na Web, com HTML, CSS,  JavasCript, C#, Python e entre outras tecnologias....</p></div>
                 <div class="botoesGeral">
                     <asp:Button runat="server" Text="HTML" CssClass="botoes" />
                     <asp:Button runat="server" Text="C#" CssClass="botoes" />
@@ -88,38 +165,71 @@
     </div>
     
     <div class="container">
-        <!--<div id="chart" style="fill:red;"></div>-->
+        <div class="quadros row">
+
+            <div class="quadro col-sm-3">
+                <img runat="server" class="center-block" src="../imgs/school.png" width="50" />
+                <h3 class="text-center">School</h3>
+                <p class="textleft">Terminando de cursar Técnico em Desenvolvimento de Sistemas na instituição Senai. Também possui alguns certificados na plataforma Udemy, como de C# e Python.</p>
+                <div class="botao_SaibaMais center-block">
+                    <a href="#" class="text-center"><p>Saiba mais</p></a>
+                </div>
+            </div>
+
+            <div class="quadro col-sm-3">
+                <img runat="server" class="center-block" src="../imgs/code.png" width="50" />
+                <h3 class="text-center">Job</h3>
+                <p class="textleft">Já realizei automações de tarefas com Python, como pegar cotações de moedas e transformas em planilhas diárias atualizadas. Já montei sites....</p>
+                <div class="botao_SaibaMais center-block">
+                    <a href="#" class="text-center"><p>Saiba mais</p></a>
+                </div>
+            </div>
+
+            <div class="quadro col-sm-3">
+                <img runat="server" class="center-block" src="../imgs/camera.png" width="50" />
+                <h3 class="text-center">Blog</h3>
+                <p class="textleft">No meu dia a dia, eu costumo fazer algumas postagens relacionadas com programação nas minhas redes sociais para descontrair e auxiliar</p>
+                <div class="botao_SaibaMais center-block">
+                    <a href="#" class="text-center"><p>Saiba mais</p></a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="https://www.gstatic.com/charts/loader.js"></script>
-    <script>
-        google.charts.load('current', { packages: ['corechart'] });
-        google.charts.setOnLoadCallback(drawChart);
+    <div class="container" style="margin-top:70px;font-family: 'Secular One', sans-serif;">
 
-        function drawChart() {
-            const container = document.querySelector('#chart')
-            const data = new google.visualization.arrayToDataTable([
-                ['Character', 'Porcentagem'],
-                ['HTML', 70],
-                ['CSS', 30],
-                ['Javascript', 30],
-                ['C#', 80],
-                ['Python', 40],
-                ['MySql', 30],
-                ['SqlServer', 30],
-                ['Git', 50]
-            ])
+        <div class="infor row" style="text-align:center; width:80%; margin:auto;">
+            <div class="col-sm-12 text-center" style="font-family: 'Secular One', sans-serif; margin-bottom:30px; color:white; filter:drop-shadow(black 2px 2px 2px);"><h2>A pessoa certa</h2></div>
+            <div class="informacoes col-sm-4">
+                <div class="conteudo_borda center-block"><img runat="server" class="center-block" src="../imgs/designer.png" width="30" style="padding-top:7px;" /></div>
+                <h3 style="color:white; font-size:20px;filter:drop-shadow(black 2px 2px 2px);">Designer</h3>
+                <p style="color:white; font-size:13px;">Eu gosto de trabalhar  com um estilo de designer  simples, visualmente limpo para o usuário.</p>
+                <h6 style="color:#03CFB0; font-size:16px; filter:drop-shadow(black 2px 2px 2px);">O que eu gosto de projetar:</h6>
+                <p style="color:white;">Interface do usuário, Websites, WebApp, Portifólios</p>
+                <h6 style="color:#03CFB0; font-size:16px; filter:drop-shadow(black 2px 2px 2px);">Ferramentas de Designer</h6>
+                <p style="color:white;">Figma<br />Canvas<br />Papel e Caneta<br />Retrato falado<br />Inspiração do cliente</p>
+            </div>
 
-            const options = {
-                title: 'Tecnologias que possuo',
-                background: '#03CFB0',
-                width: 750,
-                height: 450,
-                fill: 'red'
-            }
+            <div class="informacoes col-sm-4">
+                <div class="conteudo_borda center-block"><img runat="server" class="center-block" src="../imgs/html.png" width="30" style="padding-top:7px;" /></div>
+                <h3 style="color:white; font-size:20px;filter:drop-shadow(black 2px 2px 2px);">Frontend Developer</h3>
+                <p style="color:white; font-size:13px;">Trabalhar na criação de interface gráficas é essencial para a internet</p>
+                <h6 style="color:#8F3EF4; font-size:16px; filter:drop-shadow(black 2px 2px 2px);">Idiomas que utilizo:</h6>
+                <p style="color:white;">HTML, CSS, Javascript, Git</p>
+                <h6 style="color:#8F3EF4; font-size:16px; filter:drop-shadow(black 2px 2px 2px);">Ferramentas de Desenvolvimento</h6>
+                <p style="color:white;">Booststrap<br />React js</p>
+            </div>
+         
+            <div class="informacoes col-sm-4">
+                <div class="conteudo_borda center-block"><img runat="server" class="center-block" src="../imgs/back.png" width="30" style="padding-top:7px;" /></div>
+                <h3 style="color:white; font-size:20px;filter:drop-shadow(black 2px 2px 2px);">Backend Developer</h3>
+                <p style="color:white; font-size:13px;">Sem dúvidas a mágica por trás do Frontend é o Backend, é com ela que toda a mágica acontece</p>
+                <h6 style="color:#03CFB0; font-size:16px; filter:drop-shadow(black 2px 2px 2px);">Idiomas que utilizo:</h6>
+                <p style="color:white;">C++, C#, Javascript, Python, SQL Server, MySql</p>
+                <h6 style="color:#03CFB0; font-size:16px; filter:drop-shadow(black 2px 2px 2px);">Ferramentas de Desenvolvimento</h6>
+                <p style="color:white;">WebForms<br />WindowsForms<br />MVC<br />Console</p>
+            </div>
+        </div>
 
-            const chart = new google.visualization.BarChart(container)
-            chart.draw(data, options)
-        }
-    </script>
+    </div>
 </asp:Content>
