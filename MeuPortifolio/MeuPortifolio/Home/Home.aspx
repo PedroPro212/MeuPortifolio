@@ -114,11 +114,38 @@
 
         }
 
+        .infor h3{
+            color:white; 
+            font-size:20px;
+            filter:drop-shadow(black 2px 2px 2px);
+
+        }
+        .infor p{
+            color:white; 
+            font-size:15px;
+
+        }
+        .infor h6{
+            color:#03CFB0; 
+            font-size:16px; 
+            filter:drop-shadow(black 2px 2px 2px);
+        }
+
         .informacoes h3{
             margin-top:20px;
         }
         .informacoes p{
             margin-bottom:25px;
+        }
+
+        .recentes{
+            width:290px; 
+            height:184px; 
+            border-radius:7px;
+        }
+        .recentes:hover{
+            margin-top:15px;
+            transition:margin-top 0.1s;
         }
     </style>
 
@@ -202,34 +229,62 @@
             <div class="col-sm-12 text-center" style="font-family: 'Secular One', sans-serif; margin-bottom:30px; color:white; filter:drop-shadow(black 2px 2px 2px);"><h2>A pessoa certa</h2></div>
             <div class="informacoes col-sm-4">
                 <div class="conteudo_borda center-block"><img runat="server" class="center-block" src="../imgs/designer.png" width="30" style="padding-top:7px;" /></div>
-                <h3 style="color:white; font-size:20px;filter:drop-shadow(black 2px 2px 2px);">Designer</h3>
-                <p style="color:white; font-size:13px;">Eu gosto de trabalhar  com um estilo de designer  simples, visualmente limpo para o usuário.</p>
-                <h6 style="color:#03CFB0; font-size:16px; filter:drop-shadow(black 2px 2px 2px);">O que eu gosto de projetar:</h6>
-                <p style="color:white;">Interface do usuário, Websites, WebApp, Portifólios</p>
-                <h6 style="color:#03CFB0; font-size:16px; filter:drop-shadow(black 2px 2px 2px);">Ferramentas de Designer</h6>
-                <p style="color:white;">Figma<br />Canvas<br />Papel e Caneta<br />Retrato falado<br />Inspiração do cliente</p>
+                <h3>Designer</h3>
+                <p>Eu gosto de trabalhar  com um estilo de designer  simples, visualmente limpo para o usuário.</p>
+                <h6 style="">O que eu gosto de projetar:</h6>
+                <p>Interface do usuário, Websites, WebApp, Portifólios</p>
+                <h6>Ferramentas de Designer</h6>
+                <p>Figma<br />Canvas<br />Papel e Caneta<br />Retrato falado<br />Inspiração do cliente</p>
             </div>
 
             <div class="informacoes col-sm-4">
                 <div class="conteudo_borda center-block"><img runat="server" class="center-block" src="../imgs/html.png" width="30" style="padding-top:7px;" /></div>
-                <h3 style="color:white; font-size:20px;filter:drop-shadow(black 2px 2px 2px);">Frontend Developer</h3>
-                <p style="color:white; font-size:13px;">Trabalhar na criação de interface gráficas é essencial para a internet</p>
+                <h3>Frontend Developer</h3>
+                <p>Trabalhar na criação de interface gráficas é essencial para a internet</p>
                 <h6 style="color:#8F3EF4; font-size:16px; filter:drop-shadow(black 2px 2px 2px);">Idiomas que utilizo:</h6>
-                <p style="color:white;">HTML, CSS, Javascript, Git</p>
+                <p>HTML, CSS, Javascript, Git</p>
                 <h6 style="color:#8F3EF4; font-size:16px; filter:drop-shadow(black 2px 2px 2px);">Ferramentas de Desenvolvimento</h6>
-                <p style="color:white;">Booststrap<br />React js</p>
+                <p>Booststrap<br />React js</p>
             </div>
          
             <div class="informacoes col-sm-4">
                 <div class="conteudo_borda center-block"><img runat="server" class="center-block" src="../imgs/back.png" width="30" style="padding-top:7px;" /></div>
-                <h3 style="color:white; font-size:20px;filter:drop-shadow(black 2px 2px 2px);">Backend Developer</h3>
-                <p style="color:white; font-size:13px;">Sem dúvidas a mágica por trás do Frontend é o Backend, é com ela que toda a mágica acontece</p>
-                <h6 style="color:#03CFB0; font-size:16px; filter:drop-shadow(black 2px 2px 2px);">Idiomas que utilizo:</h6>
-                <p style="color:white;">C++, C#, Javascript, Python, SQL Server, MySql</p>
-                <h6 style="color:#03CFB0; font-size:16px; filter:drop-shadow(black 2px 2px 2px);">Ferramentas de Desenvolvimento</h6>
-                <p style="color:white;">WebForms<br />WindowsForms<br />MVC<br />Console</p>
+                <h3>Backend Developer</h3>
+                <p>Sem dúvidas a mágica por trás do Frontend é o Backend, é com ela que toda a mágica acontece</p>
+                <h6>Idiomas que utilizo:</h6>
+                <p>C++, C#, Javascript, Python, SQL Server, MySql</p>
+                <h6>Ferramentas de Desenvolvimento</h6>
+                <p>WebForms<br />WindowsForms<br />MVC<br />Console</p>
             </div>
         </div>
 
+    </div>
+
+    <div class="container" style="margin-top:80px;">
+        <div class="imagens row">
+
+            <div class="col-sm-12 text-center"><h3 style="text-transform:uppercase;font-family: 'Secular One', sans-serif; font-size:20px; color:white;">Trabalhos recentes</h3></div>
+            <div class="col-sm-12 text-center"><p style="font-family: 'Secular One', sans-serif; font-size:15px; color:white;">Alguns dos meus <a style="color:#03CFB0;">trabalhos</a> mais <a style="color:#8F3EF4;">recentes</a>. Trabalhos que você poderá fazer o <a style="color:#03CFB0;">download</a> e testar 😀</p></div>
+
+            <div class="linha1 row">
+                <div class="col-sm-2"></div>
+                <div class="recentes col-sm-4" style="background-image:url(../imgs/Python.png); margin-right:15px;"></div>
+
+                <div class="recentes col-sm-3" style="background-image:url(../imgs/PESQUISA.png);"></div>
+
+                <div class="recentes col-sm-4" style="background-image:url(../imgs/excel.png); margin-left:15px;"></div>
+                <div class="col-sm-2"></div>
+            </div>
+            <div class="col-sm-12" style="margin-top:10px;"></div>
+            <div class="linha2 row">
+                <div class="col-sm-2"></div>
+                <div class="recentes col-sm-4" style="background-image:url(../imgs/crud.png); margin-right:15px;"></div>
+
+                <div class="recentes col-sm-3" style="background-image:url(../imgs/meusite.png); "></div>
+
+                <div class="recentes col-sm-4" style="background-image:url(../imgs/JAVASC.png);margin-left:15px;"></div>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
     </div>
 </asp:Content>
