@@ -147,6 +147,10 @@
             margin-top:15px;
             transition:margin-top 0.1s;
         }
+
+        .img1:hover{
+            
+        }
     </style>
 
     <div class="container">
@@ -186,7 +190,7 @@
                     <asp:Button runat="server" Text="WebForms" CssClass="botoes" />
                     <asp:Button runat="server" Text="WindowsForms" CssClass="botoes" />
                 </div>
-                <div class="download"><a style="text-decoration:none; color:white; filter:drop-shadow(black 2px 2px 2px);" href="#">Download Currículo <img runat="server" src="../imgs/download.png" width="22" /></a></div>
+                <div class="download"><a style="text-decoration:none; color:white; filter:drop-shadow(black 2px 2px 2px);" href="#" download="../imgs/camera.png">Download Currículo <img runat="server" src="../imgs/download.png" width="22" /></a></div>
             </div>
         </div>
     </div>
@@ -263,28 +267,22 @@
     <div class="container" style="margin-top:80px;">
         <div class="imagens row">
 
-            <div class="col-sm-12 text-center"><h3 style="text-transform:uppercase;font-family: 'Secular One', sans-serif; font-size:20px; color:white;">Trabalhos recentes</h3></div>
-            <div class="col-sm-12 text-center"><p style="font-family: 'Secular One', sans-serif; font-size:15px; color:white;">Alguns dos meus <a style="color:#03CFB0;">trabalhos</a> mais <a style="color:#8F3EF4;">recentes</a>. Trabalhos que você poderá fazer o <a style="color:#03CFB0;">download</a> e testar 😀</p></div>
+            <div class="col-sm-12 text-center"><h3 style="text-transform:uppercase;font-family: 'Secular One', sans-serif; font-size:20px; color:white; margin-bottom:10px;">Trabalhos recentes</h3></div>
+            <div class="col-sm-12 text-center"><p style="font-family: 'Secular One', sans-serif; font-size:15px; color:white; margin-bottom:30px;">Alguns dos meus <a style="color:#03CFB0;">trabalhos</a> mais <a style="color:#8F3EF4;">recentes</a>. Trabalhos que você poderá fazer o <a style="color:#03CFB0;">download</a> e testar 😀</p></div>
 
-            <div class="linha1 row">
-                <div class="col-sm-2"></div>
-                <div class="recentes col-sm-4" style="background-image:url(../imgs/Python.png); margin-right:15px;"></div>
+            <div class="linha1 row center-block">
+                <div class="recentes img1 col-sm-4" style="background-image:url(../imgs/Python.png); margin-left:130px; margin-right:25px;"></div>
+                <div class="recentes col-sm-4" style="background-image:url(../imgs/PESQUISA.png);"></div>
+                <div class="recentes col-sm-4" style="background-image:url(../imgs/excel.png); margin-left:25px;"></div>
 
-                <div class="recentes col-sm-3" style="background-image:url(../imgs/PESQUISA.png);"></div>
-
-                <div class="recentes col-sm-4" style="background-image:url(../imgs/excel.png); margin-left:15px;"></div>
-                <div class="col-sm-2"></div>
             </div>
             <div class="col-sm-12" style="margin-top:10px;"></div>
             <div class="linha2 row">
-                <div class="col-sm-2"></div>
-                <div class="recentes col-sm-4" style="background-image:url(../imgs/crud.png); margin-right:15px;"></div>
-
-                <div class="recentes col-sm-3" style="background-image:url(../imgs/meusite.png); "></div>
-
-                <div class="recentes col-sm-4" style="background-image:url(../imgs/JAVASC.png);margin-left:15px;"></div>
-                <div class="col-sm-2"></div>
+                <div class="recentes col-sm-4" style="background-image:url(../imgs/crud.png);margin-left:145px; margin-right:25px;"></div>
+                <div class="recentes col-sm-4" style="background-image:url(../imgs/meusite.png); "></div>
+                <div class="recentes col-sm-4" style="background-image:url(../imgs/JAVASC.png);margin-left:25px;"></div>
             </div>
+
         </div>
     </div>
 </asp:Content>
