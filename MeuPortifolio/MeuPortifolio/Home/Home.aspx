@@ -151,6 +151,22 @@
         .img1:hover{
             
         }
+
+        .logos{
+            width:80px;
+        }
+
+        .div1{
+            display:block;
+            width:80%; 
+            height:230px; 
+            border-style:solid; 
+            border-width:3px;
+            border-color:#03CFB0; 
+            margin-bottom:50px;
+            border-radius:3px;
+        }
+
     </style>
 
     <div class="container">
@@ -285,4 +301,92 @@
 
         </div>
     </div>
+
+    <div class="container" style="width:100%;margin-top:70px; border-style:solid; border-width:3px; border-color:#03CFB0; border-radius:3px;">
+        <div>
+            <h3 class="text-center col-sm-12" style="text-transform:uppercase; color:white; filter:drop-shadow(black 2px 2px 2px)">Habilidades</h3>
+            <p class="text-left col-sm-12" style="color:white; font-family: 'Secular One', sans-serif;margin-bottom:30px;"><a style="#03CFB0;">*</a>Passe o mouse em cima dos logos</p>
+
+            <div class="logo container" style="margin-bottom:50px;">
+                <div class="col-sm-1"></div>
+                <div class=" col-sm-1">
+                    <img runat="server" class="logo" src="../imgs/LogosPort/bootstrap-original.svg" width="50" />
+                </div>
+                <div class="col-sm-1">
+                    <img runat="server" class="logo" src="../imgs/LogosPort/csharp-original.svg" width="50" />
+                </div>
+                <div class="col-sm-1">
+                    <img runat="server" class="logo" src="../imgs/LogosPort/html5-original.svg" width="50" />
+                </div>
+                <div class="col-sm-1">
+                    <img runat="server" id="css" class="logo" src="../imgs/LogosPort/css3-original.svg" width="50" />
+                </div>
+                <div class="col-sm-1">
+                    <img runat="server" class="logo" src="../imgs/LogosPort/javascript-original.svg" width="50" />
+                </div>
+                <div class="col-sm-1">
+                    <img runat="server" class="logo" src="../imgs/LogosPort/python-original.svg" width="50" />
+                </div>
+                <div class="col-sm-1">
+                    <img runat="server" class="logo" src="../imgs/LogosPort/mysql-original-wordmark.svg" width="50" />
+                </div>
+                <div class="col-sm-1">
+                    <img runat="server" class="logo" src="../imgs/LogosPort/git-original.svg" width="50" />
+                </div>
+                <div class="col-sm-1">
+                    <img runat="server" class="logo" src="../imgs/LogosPort/github-original.svg" width="50" />
+                </div>
+                <div class="col-sm-1">
+                    <img runat="server" class="logo" src="../imgs/LogosPort/figma-original.svg" width="50" />
+                </div>
+                <div class="col-sm-1"></div>
+                
+            </div>
+            
+            <div class="div1 container" id="div1" style="">
+                <div class="row text-center">
+                    <h3 style="color:white; text-transform:uppercase;font-family: 'Secular One', sans-serif; margin-top:50px; filter:drop-shadow(black 1px 1px 1px);">A cada <a style="color:#03CFB0; text-decoration:none;">tecnologia</a> é<br />um <a style="color:#8F3EF4; text-decoration:none;">talento</a> diferente!</h3>
+                    <img runat="server" src="../imgs/LogosPort/chrome-original.svg" width="80" style="margin-bottom:40px;" />
+                </div>
+            </div>
+
+            <div class="container" style="width:80%; height:220px; border-style:solid; border-width:3px; border-color:#03CFB0; margin-bottom:50px; border-radius:3px; display:none;">
+                <div class="row">
+                    <h4 class="text-center" style="color:white; text-transform:uppercase;margin-bottom:35px; font-family: 'Secular One', sans-serif; margin-top:5px; filter:drop-shadow(black 1px 1px 1px);"><a style="color:#1572B6; text-decoration:none;">C</a><a style="color:#33A9DC; text-decoration:none;">S</a><a style="color:#1572B6; text-transform:none;">S</a>3</h4>
+                    <div class="col-sm-2">
+                        <img runat="server" style="margin-left:80px;" src="../imgs/LogosPort/css3-original.svg" width="100" />
+                    </div>
+                    <p class="col-sm-3" style="margin-left:100px; color:white; font-family: 'Secular One', sans-serif; font-size:15px; border-right:solid; border-width:2px; border-color:#03CFB0";>Sem dúvidas um site bonito é um site com uma folha de estilos atrativa e chamativa. </p>
+                    <div class="col-sm-4 row">
+                        <p style="font-family: 'Secular One', sans-serif; font-size:13px; color:#8F3EF4; margin-left:20px;">Habilidades</p>
+                        <ul style="color:white;">
+                            <li>Tags básicas há avançadas</li>
+                            <li>Responsividade</li>
+                            <li>Flexbox, Grid</li>
+                            <li>@midia</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var AlterDiv = document.querySelector("#css")
+
+        AlterDiv.addEventListener("mouseover", function () {
+
+            var divEsconder = document.querySelector("#div1");
+
+            divEsconder.style.display = "none";
+
+        });
+
+        AlterDiv = addEventListener("mouseout", function () {
+            this.style.width = "50px";
+        });
+
+    </script>
 </asp:Content>
