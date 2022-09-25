@@ -167,16 +167,20 @@
             border-radius:3px;
         }
 
+        .orcamento:hover{
+            background-color:#00b4fc;
+        }
+
     </style>
 
-    <div class="container">
+    <div class="container text-left">
         <div class="col-sm-4" style="color:white; font-family: 'Secular One', sans-serif;">
             <asp:Button runat="server" CssClass="buton" Text="Quem sou?" />
             <h1>Pedro Oliveira</h1>
             <h6 style="margin-bottom:20px;">Desenvolvedor de Sistemas</h6>
-            <img runat="server" src="../imgs/map.png" width="22" style="float:left; margin-right:5px;" /><p>Paraisópolis Mg, Brasil</p>
-            <img runat="server" src="../imgs/phone.png" width="22" style="float:left; margin-right:5px;" /><p>+55 (35) 997444848</p>
-            <img runat="server" src="../imgs/email.png" width="22" style="float:left; margin-right:5px;" /><p>desenvolvedordesistemas22@gmail.com</p>
+            <img runat="server" src="../imgs/map.png" width="22" style="float:left; margin-right:5px;" /><p style="text-align:left;">Paraisópolis Mg, Brasil</p>
+            <img runat="server" src="../imgs/phone.png" width="22" style="float:left; margin-right:5px;" /><p style="text-align:left;">+55 (35) 997444848</p>
+            <img runat="server" src="../imgs/email.png" width="22" style="float:left; margin-right:5px;" /><p style="text-align:left;">desenvolvedordesistemas22@gmail.com</p>
             <div class="mini_logos row" style="margin-left:0px; margin-top:10px;">
                 <img runat="server" src="../imgs/instagram.png" width="24" />
                 <img runat="server" src="../imgs/linkedin.png" width="24" />
@@ -189,7 +193,7 @@
             <div class="borda1"><img runat="server" class="perfil" src="../imgs/perfil.png" /></div>
         </div>
     </div>
-    <div class="container" style="margin-top:30px;">
+    <div class="container text-left" style="margin-top:30px;">
         <div style="color:white;font-family: 'Secular One', sans-serif;">
             <div class="col-sm-1"></div>
             <div class="col-sm-3">
@@ -211,7 +215,7 @@
         </div>
     </div>
     
-    <div class="container">
+    <div class="container text-left">
         <div class="quadros row">
 
             <div class="quadro col-sm-3">
@@ -287,8 +291,8 @@
             <div class="col-sm-12 text-center"><p style="font-family: 'Secular One', sans-serif; font-size:15px; color:white; margin-bottom:30px;">Alguns dos meus <a style="color:#03CFB0;">trabalhos</a> mais <a style="color:#8F3EF4;">recentes</a>. Trabalhos que você poderá fazer o <a style="color:#03CFB0;">download</a> e testar 😀</p></div>
 
             <div class="linha1 row center-block">
-                <div class="recentes img1 col-sm-4" style="background-image:url(../imgs/Python.png); margin-left:130px; margin-right:25px;"></div>
-                <div class="recentes col-sm-4" style="background-image:url(../imgs/PESQUISA.png);"></div>
+                <a href="#"><div class="recentes img1 col-sm-4" style="background-image:url(../imgs/Python.png); margin-left:130px; margin-right:25px;"></div></a>
+                <a href="https://github.com/PedroPro212/Formulario-Perguntas" target="_blank"><div class="recentes col-sm-4" style="background-image:url(../imgs/PESQUISA.png);"></div></a>
                 <div class="recentes col-sm-4" style="background-image:url(../imgs/excel.png); margin-left:25px;"></div>
 
             </div>
@@ -302,91 +306,16 @@
         </div>
     </div>
 
-    <div class="container" style="width:100%;margin-top:70px; border-style:solid; border-width:3px; border-color:#03CFB0; border-radius:3px;">
-        <div>
-            <h3 class="text-center col-sm-12" style="text-transform:uppercase; color:white; filter:drop-shadow(black 2px 2px 2px)">Habilidades</h3>
-            <p class="text-left col-sm-12" style="color:white; font-family: 'Secular One', sans-serif;margin-bottom:30px;"><a style="#03CFB0;">*</a>Passe o mouse em cima dos logos</p>
-
-            <div class="logo container" style="margin-bottom:50px;">
-                <div class="col-sm-1"></div>
-                <div class=" col-sm-1">
-                    <img runat="server" class="logo" src="../imgs/LogosPort/bootstrap-original.svg" width="50" />
-                </div>
-                <div class="col-sm-1">
-                    <img runat="server" class="logo" src="../imgs/LogosPort/csharp-original.svg" width="50" />
-                </div>
-                <div class="col-sm-1">
-                    <img runat="server" class="logo" src="../imgs/LogosPort/html5-original.svg" width="50" />
-                </div>
-                <div class="col-sm-1">
-                    <img runat="server" id="css" class="logo" src="../imgs/LogosPort/css3-original.svg" width="50" />
-                </div>
-                <div class="col-sm-1">
-                    <img runat="server" class="logo" src="../imgs/LogosPort/javascript-original.svg" width="50" />
-                </div>
-                <div class="col-sm-1">
-                    <img runat="server" class="logo" src="../imgs/LogosPort/python-original.svg" width="50" />
-                </div>
-                <div class="col-sm-1">
-                    <img runat="server" class="logo" src="../imgs/LogosPort/mysql-original-wordmark.svg" width="50" />
-                </div>
-                <div class="col-sm-1">
-                    <img runat="server" class="logo" src="../imgs/LogosPort/git-original.svg" width="50" />
-                </div>
-                <div class="col-sm-1">
-                    <img runat="server" class="logo" src="../imgs/LogosPort/github-original.svg" width="50" />
-                </div>
-                <div class="col-sm-1">
-                    <img runat="server" class="logo" src="../imgs/LogosPort/figma-original.svg" width="50" />
-                </div>
-                <div class="col-sm-1"></div>
-                
-            </div>
-            
-            <div class="div1 container" id="div1" style="">
-                <div class="row text-center">
-                    <h3 style="color:white; text-transform:uppercase;font-family: 'Secular One', sans-serif; margin-top:50px; filter:drop-shadow(black 1px 1px 1px);">A cada <a style="color:#03CFB0; text-decoration:none;">tecnologia</a> é<br />um <a style="color:#8F3EF4; text-decoration:none;">talento</a> diferente!</h3>
-                    <img runat="server" src="../imgs/LogosPort/chrome-original.svg" width="80" style="margin-bottom:40px;" />
-                </div>
-            </div>
-
-            <div class="container" style="width:80%; height:220px; border-style:solid; border-width:3px; border-color:#03CFB0; margin-bottom:50px; border-radius:3px; display:none;">
-                <div class="row">
-                    <h4 class="text-center" style="color:white; text-transform:uppercase;margin-bottom:35px; font-family: 'Secular One', sans-serif; margin-top:5px; filter:drop-shadow(black 1px 1px 1px);"><a style="color:#1572B6; text-decoration:none;">C</a><a style="color:#33A9DC; text-decoration:none;">S</a><a style="color:#1572B6; text-transform:none;">S</a>3</h4>
-                    <div class="col-sm-2">
-                        <img runat="server" style="margin-left:80px;" src="../imgs/LogosPort/css3-original.svg" width="100" />
-                    </div>
-                    <p class="col-sm-3" style="margin-left:100px; color:white; font-family: 'Secular One', sans-serif; font-size:15px; border-right:solid; border-width:2px; border-color:#03CFB0";>Sem dúvidas um site bonito é um site com uma folha de estilos atrativa e chamativa. </p>
-                    <div class="col-sm-4 row">
-                        <p style="font-family: 'Secular One', sans-serif; font-size:13px; color:#8F3EF4; margin-left:20px;">Habilidades</p>
-                        <ul style="color:white;">
-                            <li>Tags básicas há avançadas</li>
-                            <li>Responsividade</li>
-                            <li>Flexbox, Grid</li>
-                            <li>@midia</li>
-                        </ul>
-                    </div>
-
-                </div>
+    <div class="container">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <div class="center-block"  style="width:493px; height:215px; color:hsl(0, 50%, 50%); border-color:#00B4CC; border-style:solid; border-radius:20px; margin-top:70px; font-family: 'Secular One', sans-serif;">
+                <h3 style="text-transform:uppercase; text-align:center; color:white; font-size:20px; margin-top:40px; margin-left:30px; margin-right:30px;">Precisa de um sistema? Site, programa ou automação/bot?</h3>
+                <a href="Orcamento.aspx" style="text-decoration:none;"><div class="orcamento" style="background-color:#386DBD; width:220px; height:43px; margin-left:131px; border-radius:30px; margin-top:30px;">
+                    <p style="text-transform:uppercase; color:white; text-align:center; padding-top:10px;">Se sim, clique aqui</p>
+                </div></a>
             </div>
         </div>
+        <div class="col-sm-3"></div>
     </div>
-
-    <script>
-
-        var AlterDiv = document.querySelector("#css")
-
-        AlterDiv.addEventListener("mouseover", function () {
-
-            var divEsconder = document.querySelector("#div1");
-
-            divEsconder.style.display = "none";
-
-        });
-
-        AlterDiv = addEventListener("mouseout", function () {
-            this.style.width = "50px";
-        });
-
-    </script>
 </asp:Content>

@@ -57,25 +57,26 @@
                 <div class="col-sm-8 text-center">
                     <div class="navbar-collapse collapse" style="font-family: 'Secular One', sans-serif; color:white; font-size:15px;">
                         <ul class="nav navbar-nav">
-                            <li><a runat="server" class="opcoes" href="~/" style="color:white;">Home</a></li>
+                            <li><a runat="server" class="opcoes" href="~/Home/Home.aspx" style="color:white;">Home</a></li>
                             <li><a runat="server" class="opcoes" href="~/About" style="color:white;">Sobre</a></li>
                             <li><a runat="server" class="opcoes" href="#" style="color:white;">Trabalhos</a></li>
                             <li><a runat="server" class="opcoes" href="#" style="color:white;">Portifólio</a></li>
                             <li><a runat="server" class="opcoes" href="#" style="color:white;">Habilidades</a></li>
                             <li><a runat="server" class="opcoes" href="#" style="color:white;">Contato</a></li>
-                            <li><a runat="server" class="opcoes" href="#" style="color:white;">Orçamento</a></li>
+                            <li><a runat="server" class="opcoes" href="~/Home/Orcamento.aspx" style="color:white;">Orçamento</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-sm-2"></div>
             </div>
         </div>
-        <div class="container body-content">
+        <div class="container body-content text-center">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
 
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Meu aplicativo ASP.NET</p>
+            <footer style="color:white; margin-top:50px;">
+                <p>Todos os direitos reservados</p>
+                <p><b>Termos de privacidade – Todos os direitos reservados – Termos de Uso</b></p>
             </footer>
         </div>
 
