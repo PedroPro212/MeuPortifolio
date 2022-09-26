@@ -124,6 +124,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Home\Habilidades.aspx" />
     <Content Include="Home\Orcamento.aspx" />
     <Content Include="Home\Home.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -179,6 +180,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Habilidades.aspx.cs">
+      <DependentUpon>Habilidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Habilidades.aspx.designer.cs">
+      <DependentUpon>Habilidades.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home\Orcamento.aspx.cs">
       <DependentUpon>Orcamento.aspx</DependentUpon>
