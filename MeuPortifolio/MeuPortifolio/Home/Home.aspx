@@ -182,9 +182,9 @@
             <img runat="server" src="../imgs/phone.png" width="22" style="float:left; margin-right:5px;" /><p style="text-align:left;">+55 (35) 997444848</p>
             <img runat="server" src="../imgs/email.png" width="22" style="float:left; margin-right:5px;" /><p style="text-align:left;">desenvolvedordesistemas22@gmail.com</p>
             <div class="mini_logos row" style="margin-left:0px; margin-top:10px;">
-                <img runat="server" src="../imgs/instagram.png" width="24" />
-                <img runat="server" src="../imgs/linkedin.png" width="24" />
-                <img runat="server" src="../imgs/github.png" width="24" />
+                <a href="https://www.instagram.com/pedro_code_212/" target="_blank"><img runat="server" src="../imgs/instagram.png" width="24" /></a>
+                <a href="https://www.linkedin.com/in/pedro-oliveira-b820811b4/" target="_blank"><img runat="server" src="../imgs/linkedin.png" width="24" /></a>
+                <a href="https://github.com/PedroPro212" target="_blank"><img runat="server" src="../imgs/github.png" width="24" /></a>
             </div>
         </div>
 
@@ -268,7 +268,7 @@
                 <h6 style="color:#8F3EF4; font-size:16px; filter:drop-shadow(black 2px 2px 2px);">Idiomas que utilizo:</h6>
                 <p>HTML, CSS, Javascript, Git</p>
                 <h6 style="color:#8F3EF4; font-size:16px; filter:drop-shadow(black 2px 2px 2px);">Ferramentas de Desenvolvimento</h6>
-                <p>Booststrap<br />React js</p>
+                <p>Booststrap<br /></p>
             </div>
          
             <div class="informacoes col-sm-4">
@@ -276,9 +276,9 @@
                 <h3>Backend Developer</h3>
                 <p>Sem dúvidas a mágica por trás do Frontend é o Backend, é com ela que toda a mágica acontece</p>
                 <h6>Idiomas que utilizo:</h6>
-                <p>C++, C#, Javascript, Python, SQL Server, MySql</p>
+                <p>C#, Javascript, Python, SQL Server, MySql</p>
                 <h6>Ferramentas de Desenvolvimento</h6>
-                <p>WebForms<br />WindowsForms<br />MVC<br />Console</p>
+                <p>WebForms<br />WindowsForms<br />Console</p>
             </div>
         </div>
 

@@ -53,21 +53,17 @@
 
         <div class="navbar navbar-inverse navbar-fixed-top" style="background:#1A1A21;">
             <div class="container">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8 text-center">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
                     <div class="navbar-collapse collapse" style="font-family: 'Secular One', sans-serif; color:white; font-size:15px;">
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav text-center">
                             <li><a runat="server" class="opcoes" href="~/Home/Home.aspx" style="color:white;">Home</a></li>
-                            <li><a runat="server" class="opcoes" href="~/About" style="color:white;">Sobre</a></li>
-                            <li><a runat="server" class="opcoes" href="#" style="color:white;">Trabalhos</a></li>
-                            <li><a runat="server" class="opcoes" href="#" style="color:white;">Portifólio</a></li>
-                            <li><a runat="server" class="opcoes" href="#" style="color:white;">Habilidades</a></li>
-                            <li><a runat="server" class="opcoes" href="#" style="color:white;">Contato</a></li>
+                            <li><a runat="server" class="opcoes" href="~/Home/Habilidades.aspx" style="color:white;">Habilidades</a></li>
                             <li><a runat="server" class="opcoes" href="~/Home/Orcamento.aspx" style="color:white;">Orçamento</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-2"></div>
+                <div class="col-sm-4"></div>
             </div>
         </div>
         <div class="container body-content text-center">
