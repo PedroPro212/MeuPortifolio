@@ -182,7 +182,7 @@
 
     <div class="container text-left">
         <div class="col-sm-4" style="color:white; font-family: 'Secular One', sans-serif;">
-            <asp:Button runat="server" CssClass="buton" Text="Quem sou?" />
+            <asp:Button runat="server" CssClass="buton" Text="Habilidades" ID="btnQuemSou" OnClick="btnQuemSou_Click" />
             <h1>Pedro Oliveira</h1>
             <h6 style="margin-bottom:20px;">Desenvolvedor de Sistemas</h6>
             <img runat="server" src="../imgs/map.png" width="22" style="float:left; margin-right:5px;" /><p style="text-align:left;">Paraisópolis Mg, Brasil</p>
@@ -217,7 +217,7 @@
                     <asp:Button runat="server" Text="WebForms" CssClass="botoes" />
                     <asp:Button runat="server" Text="WindowsForms" CssClass="botoes" />
                 </div>
-                <div class="download"><a style="text-decoration:none; color:white; filter:drop-shadow(black 2px 2px 2px);" href="#" download="../imgs/camera.png">Download Currículo <img runat="server" src="../imgs/download.png" width="22" /></a></div>
+                <div class="download"><a style="text-decoration:none; color:white; filter:drop-shadow(black 2px 2px 2px);" href="../imgs/Curriculo.pdf" target="_blank">Download Currículo <img runat="server" src="../imgs/download.png" width="22" /></a></div>
             </div>
         </div>
     </div>

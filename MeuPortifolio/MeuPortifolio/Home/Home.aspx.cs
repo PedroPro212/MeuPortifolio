@@ -13,5 +13,10 @@ namespace MeuPortifolio.Home
         {
 
         }
+
+        protected void btnQuemSou_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Habilidades.aspx");
+        }
     }
 }
