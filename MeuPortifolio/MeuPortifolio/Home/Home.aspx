@@ -4,6 +4,7 @@
     <style>
         body{
             background-color:#1A1A21;
+            overflow-x:hidden;
         }
 
         .buton{
@@ -169,6 +170,12 @@
 
         .orcamento:hover{
             background-color:#00b4fc;
+        }
+
+        @media (max-width:600px){
+            body{
+                background:red;
+            }
         }
 
     </style>
