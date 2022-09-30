@@ -20,12 +20,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=PT+Serif:ital@1&family=Secular+One&display=swap');
 
         .opcoes{
-
+            color:white;
         }
-
-        .opcoes:hover{
-            color:red;
-        }
+            .opcoes:hover{
+                color:red;
+            }
     </style>
 
 </head>
@@ -57,13 +56,15 @@
                 <div class="col-sm-4">
                     <div class="navbar-collapse collapse" style="font-family: 'Secular One', sans-serif; color:white; font-size:15px;">
                         <ul class="nav navbar-nav text-center">
-                            <li><a runat="server" class="opcoes" href="~/Home/Home.aspx" style="color:white;">Home</a></li>
-                            <li><a runat="server" class="opcoes" href="~/Home/Habilidades.aspx" style="color:white;">Habilidades</a></li>
-                            <li><a runat="server" class="opcoes" href="~/Home/Orcamento.aspx" style="color:white;">Orçamento</a></li>
+                            <li class="opcoes"><a runat="server" href="~/Home/Home.aspx">Home</a></li>
+                            <li class="opcoes"><a runat="server" class="opcoes" href="~/Home/Habilidades.aspx">Habilidades</a></li>
+                            <li class="opcoes"><a runat="server" class="opcoes" href="~/Home/Orcamento.aspx">Orçamento</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <a href="User/Login.aspx" runat="server"><img runat="server" style="margin-top:10px;margin-left:280px;" src="imgs/user.png" width="24" /></a>
+                </div>
             </div>
         </div>
         <div class="container body-content text-center">
