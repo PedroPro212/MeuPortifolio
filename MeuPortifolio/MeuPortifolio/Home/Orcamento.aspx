@@ -44,7 +44,7 @@
 
     <div class="container text-center" style="width:80%; font-family: 'Secular One', sans-serif; margin-top:50px;">
         <div class="row">
-            <h1 style="text-decoration:none;">Necessitando de um <a style="color:#03CFB0">site</a>,<br /><a style="color:#8F3EF4;">automação</a>/<a style="color:#03CFB0;">bot</a> ou <a style="color:#8F3EF4;">aplicação</a>?</h1>
+            <h1 style="text-decoration:none;">Necessitando de um <a style="color:#03CFB0">site</a>,<br /><a style="color:#8F3EF4; text-decoration:none;">automação</a>/<a style="color:#03CFB0; text-decoration:none;">bot</a> ou <a style="color:#8F3EF4; text-decoration:none;">aplicação</a>?</h1>
             <p style="color:white; font-size:18px; margin-top:40px;">Sem sombras de dúvidas um comércio necessita de um WebSite para conseguir destque na internet em 2022, ou um WebApp para gerir uma loja ou algo parecido.  Também exixte a automação de sistema web, onde aquela tarefa 
                 que você faz repetidas vezes acaba sendo automatizada, assim fazendo você ecônomizar tempo!</p>
         </div>
