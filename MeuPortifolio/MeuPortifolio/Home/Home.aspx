@@ -172,7 +172,7 @@
             background-color:#00b4fc;
         }
 
-        @media (max-width:600px){
+        @media screen and (max-width:467px){
             body{
                 background:red;
             }

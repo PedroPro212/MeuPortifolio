@@ -96,6 +96,24 @@
                         <li>Script</li>
                     </ul>
                 </div>
+                <div class="center-block" id="div6" style="display:none;width:400px; margin-top:30px; border-width:2px; border-style:solid;border-color:#03CFB0; border-radius:3px;">
+                    <p style="margin-top:10px;">Git</p>
+                    <p>Um programador sem o Git é a mesma coisa que um carro sem a chave.</p>
+                    <ul class="text-left">
+                        <li>Commit</li>
+                        <li>PR</li>
+                        <li>Branchs</li>
+                    </ul>
+                </div>
+                <div class="center-block" id="div7" style="display:none;width:400px; margin-top:30px; border-width:2px; border-style:solid;border-color:#03CFB0; border-radius:3px;">
+                    <p style="margin-top:10px;">Figma</p>
+                    <p>E para um desenvolvedor Frontend sem dúvidas umas das melhores ferramentas é de designer é o Figma.</p>
+                    <ul class="text-left">
+                        <li>Layout</li>
+                        <li>Cores</li>
+                        <li>Criação de telas</li>
+                    </ul>
+                </div>
             </div>
             <div class="col-sm-2"></div>
             <div class="col-sm-5">
@@ -119,6 +137,8 @@
                 div3.style.display = 'none';
                 div4.style.display = 'none';
                 div5.style.display = 'none';
+                div6.style.display = 'none';
+                div7.style.display = 'none';
             }
 
         });
@@ -137,6 +157,8 @@
                 div3.style.display = 'none';
                 div4.style.display = 'none';
                 div5.style.display = 'none';
+                div6.style.display = 'none';
+                div7.style.display = 'none';
             }
 
         });
@@ -154,6 +176,8 @@
                 div2.style.display = 'none';
                 div4.style.display = 'none';
                 div5.style.display = 'none';
+                div6.style.display = 'none';
+                div7.style.display = 'none';
             }
         });
 
@@ -170,6 +194,8 @@
                 div2.style.display = 'none';
                 div3.style.display = 'none';
                 div5.style.display = 'none';
+                div6.style.display = 'none';
+                div7.style.display = 'none';
             }
         });
 
@@ -185,8 +211,45 @@
                 div2.style.display = 'none';
                 div3.style.display = 'none';
                 div4.style.display = 'none';
+                div6.style.display = 'none';
+                div7.style.display = 'none';
             }
         });
+
+        var btn6 = document.querySelector('#btnGit');
+        var div6 = document.querySelector('#div6');
+
+        btn6.addEventListener('click', function () {
+            if (div6.style.display === 'block') {
+                div6.style.display = 'none';
+            } else {
+                div6.style.display = 'block';
+                div1.style.display = 'none';
+                div2.style.display = 'none';
+                div3.style.display = 'none';
+                div4.style.display = 'none';
+                div5.style.display = 'none';
+                div7.style.display = 'none';
+            }
+        });
+
+
+        var btn7 = document.querySelector('#btnFigma');
+        var div7 = document.querySelector('#div7');
+
+        btn7.addEventListener('click', function () {
+            if (div7.style.display === 'block') {
+                div7.style.display = 'none';
+            } else {
+                div7.style.display = 'block';
+                div1.style.display = 'none';
+                div2.style.display = 'none';
+                div3.style.display = 'none';
+                div4.style.display = 'none';
+                div5.style.display = 'none';
+                div6.style.display = 'none';
+            }
+        })
     </script>
 
 </asp:Content>
