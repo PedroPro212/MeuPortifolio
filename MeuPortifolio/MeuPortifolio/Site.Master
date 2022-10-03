@@ -8,6 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Meu aplicativo ASP.NET</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -63,7 +64,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <a href="User/Login.aspx" runat="server"><img runat="server" style="margin-top:10px;margin-left:280px;" src="imgs/user.png" width="24" /></a>
+                    <a href="Admin/Login.aspx" runat="server"><img runat="server" style="margin-top:10px;margin-left:280px;" src="imgs/user.png" width="24" /></a>
                 </div>
             </div>
         </div>

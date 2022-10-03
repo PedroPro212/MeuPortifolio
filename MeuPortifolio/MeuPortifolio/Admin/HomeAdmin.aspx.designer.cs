@@ -7,11 +7,11 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace MeuPortifolio.User
+namespace MeuPortifolio.Admin
 {
 
 
-    public partial class Login
+    public partial class HomeAdmin
     {
     }
 }
