@@ -79,8 +79,9 @@
                             </select>
                         </div>
                         <div class="col-sm-12">
-                            <asp:Button runat="server" CssClass="botao" ID="btnEnviar" Text="Pedir Orçamento" />
+                            <asp:Button runat="server" CssClass="botao" ID="btnEnviar" Text="Pedir Orçamento" OnClick="btnEnviar_Click" />
                         </div>
+                        <asp:Label runat="server" ID="lblData" Visible="false"></asp:Label>
                     </div>
                 </div>
             </div>

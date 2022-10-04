@@ -13,5 +13,18 @@ namespace MeuPortifolio.Home
         {
 
         }
+
+        protected void btnEnviar_Click(object sender, EventArgs e)
+        {
+            DateTime dateTime = DateTime.Now;
+
+            var elementos = new Classes.Orcamento();
+            elementos.nome = txtNome.Text;
+            elementos.email = txtEmail.Text;
+            elementos.tel = txtTel.Text;
+            elementos.data = Convert.ToString(dateTime);
+            
+            new Negocios.Orcamento().Create(elementos);
+        }
     }
 }
