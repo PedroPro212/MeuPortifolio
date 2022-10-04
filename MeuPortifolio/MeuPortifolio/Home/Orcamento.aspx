@@ -69,7 +69,7 @@
                         </div>
                         <div class="col-sm-2"></div>
                         <div class="col-sm-4" style="margin-top:30px;">
-                            <asp:TextBox runat="server" ID="txtTel" CssClass="txts" Width="130" Height="30" ForeColor="Black" TextMode="Number" placeholder="Tel:"></asp:TextBox>
+                            <asp:TextBox runat="server" ID="txtTel" CssClass="txts" Width="130" Height="30" ForeColor="Black" TextMode="Number" placeholder="Tel: 35997444848"></asp:TextBox>
                             <select runat="server" name="select" class="Opcao">
                                 <option value="optEscolha">Escolha</option>
                                 <option value="optWebSite">WebSite</option>
