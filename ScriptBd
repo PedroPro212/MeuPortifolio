@@ -1,0 +1,13 @@
+CREATE DATABASE Portifolio;
+USE Portifolio;
+
+CREATE TABLE Orcamento(
+    id int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    Nome varchar(200) NOT NULL,
+    Email varchar(300) NOT NULL,
+    Tel varchar(11),
+    Escolha varchar(50),
+    DataHora DATETIME
+);
+
+INSERT INTO Orcamento (Nome, Email, Tel, Escolha, DataHora) VALUES ('Pedro', 'pedrogamer212004@gmail.com', '35997444848', 'WebSite', '2022-01-20 13:26:13')
