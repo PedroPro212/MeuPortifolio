@@ -65,7 +65,7 @@
                         <div class="col-sm-5" style="margin-left:28px; margin-top:30px;">
                             <asp:TextBox runat="server" ID="txtNome" CssClass="txts" Width="349" Height="30" ForeColor="Black" placeholder="Nome:"></asp:TextBox>
                             <asp:TextBox runat="server" ID="txtEmail" CssClass="txts email" Width="349" Height="30" ForeColor="Black" TextMode="Email" placeholder="Email:"></asp:TextBox>
-                            <textarea runat="server" class="descricao" id="txadescricao" Width="349" Height="30" cols="40" ForeColor="Black" placeholder="Descrição:"></textarea>
+                            <textarea runat="server" class="descricao" id="txadescricao" Width="349" Height="30" cols="40" ForeColor="Black" placeholder="Descrição:" style="color:black;"></textarea>
                         </div>
                         <div class="col-sm-2"></div>
                         <div class="col-sm-4" style="margin-top:30px;">

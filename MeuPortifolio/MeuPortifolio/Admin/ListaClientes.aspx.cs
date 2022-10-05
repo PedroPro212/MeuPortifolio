@@ -7,16 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace MeuPortifolio.Admin
 {
-    public partial class HomeAdmin : System.Web.UI.Page
+    public partial class ListaClientes : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void btnListaClientes_Click(object sender, EventArgs e)
+        protected void grdClientes_RowCommand(object sender, GridViewCommandEventArgs e)
         {
-            Response.Redirect("ListaClientes.aspx");
+
         }
     }
 }
