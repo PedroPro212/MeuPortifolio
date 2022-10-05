@@ -16,15 +16,32 @@ namespace MeuPortifolio.Home
 
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
-            string dateTime = $"{DateTime.Now.Year}-{DateTime.Now.Month}-{DateTime.Now.Day} {DateTime.Now.Hour}:{DateTime.Now.Minute}:{DateTime.Now.Second}";
+            string a = txtNome.Text.Replace(" ", "");
+            string b = txtEmail.Text.Replace(" ", "");
+            string c = txtTel.Text.Replace(" ", "");
+            string d = sltOpcoes.Value.Replace(" ", "");
 
-            var elementos = new Classes.Orcamento();
-            elementos.nome = txtNome.Text;
-            elementos.email = txtEmail.Text;
-            elementos.tel = txtTel.Text;
-            elementos.data = dateTime;
+            if (txtNome.Text == "" || txtEmail.Text == "" || txtTel.Text == "" || sltOpcoes.Value == "")
+            {
+                SiteMaster.AlertPersonalizado(this, "Os campos tem que estar preenchidos!");
+            }
+            else
+            {
+                string dateTime = $"{DateTime.Now.Year}-{DateTime.Now.Month}-{DateTime.Now.Day} {DateTime.Now.Hour}:{DateTime.Now.Minute}:{DateTime.Now.Second}";
+
+                var elementos = new Classes.Orcamento();
+                elementos.nome = txtNome.Text;
+                elementos.email = txtEmail.Text;
+                elementos.tel = txtTel.Text;
+                elementos.data = dateTime;
+                elementos.opcoes = sltOpcoes.Value;
             
-            new Negocios.Orcamento().Create(elementos);
+                new Negocios.Orcamento().Create(elementos);
+
+                SiteMaster.AlertPersonalizado(this, "Enviado com sucesso seu orçamento");
+            }
+
+
         }
     }
 }
