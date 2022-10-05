@@ -70,12 +70,12 @@
                         <div class="col-sm-2"></div>
                         <div class="col-sm-4" style="margin-top:30px;">
                             <asp:TextBox runat="server" ID="txtTel" CssClass="txts" Width="130" Height="30" ForeColor="Black" TextMode="Number" placeholder="Tel: 35997444848"></asp:TextBox>
-                            <select runat="server" name="select" class="Opcao">
-                                <option value="optEscolha">Escolha</option>
-                                <option value="optWebSite">WebSite</option>
-                                <option value="optLojaOnline">Loja Online</option>
-                                <option value="optPrograma">Programa</option>
-                                <option value="optAutomacao">Automação</option>
+                            <select runat="server" name="select" class="Opcao" id="sltOpcoes">
+                                <option value="">Escolha</option>
+                                <option value="WebSite">WebSite</option>
+                                <option value="LojaOnline">Loja Online</option>
+                                <option value="Programa">Programa</option>
+                                <option value="Automacao">Automação</option>
                             </select>
                         </div>
                         <div class="col-sm-12">
