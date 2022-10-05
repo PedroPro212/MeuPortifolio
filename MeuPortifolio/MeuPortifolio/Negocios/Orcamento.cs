@@ -14,9 +14,48 @@ namespace MeuPortifolio.Negocios
             connection = new MySqlConnection(SiteMaster.ConnectionString);
         }
 
+        public List<Classes.Orcamento> Read(string id, string nome)
+        {
+            var orcamento = new List<Classes.Orcamento>();
+            try
+            {
+                connection.Open();
+                var comando = new MySqlCommand($"SELECT Nome, Email, Tel, Escolha FROM orcamento WHERE (1=1) ", connection);
+                if(nome.Equals("") == false)
+                {
+                    comando.CommandText += $" AND Nome like @nome";
+                    comando.Parameters.Add(new MySqlParameter("Nome", $"%{nome}"));
+                }
+                if(id.Equals("") == false)
+                {
+                    comando.CommandText += $" AND =id";
+                    comando.Parameters.Add(new MySqlParameter("id", $"%{id}"));
+                }
+                var reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    orcamento.Add(new Classes.Orcamento
+                    {
+                        nome = reader.GetString("Nome"),
+                        id = reader.GetInt32("id")
+                    });
+                }
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                connection.Close();
+            }
+            return orcamento;
+        }
+
+
         public bool Create(Classes.Orcamento orcamento)
         {
-            
+       
             try
             {
                 connection.Open();

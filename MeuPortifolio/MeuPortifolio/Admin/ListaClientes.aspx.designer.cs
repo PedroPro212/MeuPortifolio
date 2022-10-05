@@ -11,16 +11,16 @@ namespace MeuPortifolio.Admin
 {
 
 
-    public partial class HomeAdmin
+    public partial class ListaClientes
     {
 
         /// <summary>
-        /// Controle btnListaClientes.
+        /// Controle grdClientes.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnListaClientes;
+        protected global::System.Web.UI.WebControls.GridView grdClientes;
     }
 }
