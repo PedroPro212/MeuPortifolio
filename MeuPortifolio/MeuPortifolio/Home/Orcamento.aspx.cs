@@ -16,13 +16,13 @@ namespace MeuPortifolio.Home
 
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
-            DateTime dateTime = DateTime.Now;
+            string dateTime = $"{DateTime.Now.Year}-{DateTime.Now.Month}-{DateTime.Now.Day} {DateTime.Now.Hour}:{DateTime.Now.Minute}:{DateTime.Now.Second}";
 
             var elementos = new Classes.Orcamento();
             elementos.nome = txtNome.Text;
             elementos.email = txtEmail.Text;
             elementos.tel = txtTel.Text;
-            elementos.data = Convert.ToString(dateTime);
+            elementos.data = dateTime;
             
             new Negocios.Orcamento().Create(elementos);
         }
