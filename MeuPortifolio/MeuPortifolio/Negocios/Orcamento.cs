@@ -13,6 +13,10 @@ namespace MeuPortifolio.Negocios
         {
             connection = new MySqlConnection(SiteMaster.ConnectionString);
         }
+        public Classes.Orcamento Read(string id)
+        {
+            return this.Read(id, "").FirstOrDefault();
+        }
 
         public List<Classes.Orcamento> Read(string id, string nome)
         {
@@ -20,16 +24,16 @@ namespace MeuPortifolio.Negocios
             try
             {
                 connection.Open();
-                var comando = new MySqlCommand($"SELECT Nome, Email, Tel, Escolha FROM orcamento WHERE (1=1) ", connection);
+                var comando = new MySqlCommand($"SELECT Nome, Email, Tel, Escolha, id FROM orcamento WHERE (1=1) ", connection);
                 if(nome.Equals("") == false)
                 {
-                    comando.CommandText += $" AND Nome like @nome";
+                    comando.CommandText += $" AND Nome like @nome"; 
                     comando.Parameters.Add(new MySqlParameter("Nome", $"%{nome}"));
                 }
                 if(id.Equals("") == false)
                 {
-                    comando.CommandText += $" AND =id";
-                    comando.Parameters.Add(new MySqlParameter("id", $"%{id}"));
+                    comando.CommandText += $" AND id = @id";
+                    comando.Parameters.Add(new MySqlParameter("id", id));
                 }
                 var reader = comando.ExecuteReader();
                 while (reader.Read())
@@ -66,6 +70,22 @@ namespace MeuPortifolio.Negocios
                 comando.Parameters.Add(new MySqlParameter("escolha", orcamento.opcoes));
                 comando.Parameters.Add(new MySqlParameter("data", orcamento.data));
                 
+                comando.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public bool Delete(int id)
+        {
+            try
+            {
+                connection.Open();
+                var comando = new MySqlCommand("DELETE FROM orcamento WHERE id = " + id, connection);
                 comando.ExecuteNonQuery();
                 connection.Close();
             }
