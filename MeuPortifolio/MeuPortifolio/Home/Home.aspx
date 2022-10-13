@@ -157,6 +157,14 @@
             width:80px;
         }
 
+        .quadro1{
+            margin-left:130px;
+            margin-right:25px;
+        }
+        .quadro3{
+            margin-left:25px;
+        }
+
         .div1{
             display:block;
             width:80%; 
@@ -174,8 +182,39 @@
 
         @media screen and (max-width:467px){
             body{
-                background:red;
+                
             }
+
+            .escrita{
+                margin-left:30px;
+            }
+
+            .botoes{
+                color:white;
+                margin-bottom:10px;
+                
+            }
+
+            .botoes_WindowsForms{
+                display:none;
+            }
+
+            .download{
+                margin-left:90px;
+            }
+
+            .quadro1{
+                margin:auto;
+                margin-bottom:10px;
+            }
+            .quadro2{
+                margin:auto;
+                margin-bottom:10px;
+            }
+            .quadro3{
+                margin:auto;
+            }
+            
         }
 
     </style>
@@ -207,7 +246,7 @@
                 <img runat="server" src="../imgs/desktop.png" width="355" />
             </div>
             <div class="col-sm-1"></div>
-            <div class="col-sm-6">
+            <div class="escrita col-sm-6">
                 <h3 style="margin-bottom:15px; filter:drop-shadow(black 2px 2px 2px)">Follow me</h3>
                 <div style="width:80%; font-size:15px;"><p>Olá. Meu nome é Pedro, sou Desenvolvedor de Sistemas. Atua principalmente na Web, com HTML, CSS,  JavasCript, C#, Python e entre outras tecnologias....</p></div>
                 <div class="botoesGeral">
@@ -215,7 +254,7 @@
                     <asp:Button runat="server" Text="C#" CssClass="botoes" />
                     <asp:Button runat="server" Text="Python" CssClass="botoes" />
                     <asp:Button runat="server" Text="WebForms" CssClass="botoes" />
-                    <asp:Button runat="server" Text="WindowsForms" CssClass="botoes" />
+                    <asp:Button runat="server" Text="WindowsForms" CssClass="botoes botoes_WindowsForms" />
                 </div>
                 <div class="download"><a style="text-decoration:none; color:white; filter:drop-shadow(black 2px 2px 2px);" href="../imgs/Curriculo.pdf" target="_blank">Download Currículo <img runat="server" src="../imgs/download.png" width="22" /></a></div>
             </div>
@@ -298,9 +337,9 @@
             <div class="col-sm-12 text-center"><p style="font-family: 'Secular One', sans-serif; font-size:15px; color:white; margin-bottom:30px;">Alguns dos meus <a style="color:#03CFB0;">trabalhos</a> mais <a style="color:#8F3EF4;">recentes</a>. Trabalhos que você poderá fazer o <a style="color:#03CFB0;">download</a> e testar 😀</p></div>
 
             <div class="linha1 row center-block">
-                <a href="#"><div class="recentes img1 col-sm-4" style="background-image:url(../imgs/Python.png); margin-left:130px; margin-right:25px;"></div></a>
-                <a href="https://github.com/PedroPro212/Formulario-Perguntas" target="_blank"><div class="recentes col-sm-4" style="background-image:url(../imgs/PESQUISA.png);"></div></a>
-                <div class="recentes col-sm-4" style="background-image:url(../imgs/excel.png); margin-left:25px;"></div>
+                <a href="#"><div class="recentes quadro1 img1 col-sm-4" style="background-image:url(../imgs/Python.png);"></div></a>
+                <a href="https://github.com/PedroPro212/Formulario-Perguntas" target="_blank"><div class="recentes quadro2 col-sm-4" style="background-image:url(../imgs/PESQUISA.png);"></div></a>
+                <a href="#"><div class="recentes quadro3 col-sm-4" style="background-image:url(../imgs/excel.png);"></div></a>
 
             </div>
             <div class="col-sm-12" style="margin-top:10px;"></div>
