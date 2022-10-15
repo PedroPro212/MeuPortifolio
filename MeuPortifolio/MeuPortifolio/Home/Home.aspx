@@ -164,6 +164,13 @@
         .quadro3{
             margin-left:25px;
         }
+        .quadro4{
+            margin-left:145px; 
+            margin-right:25px;
+        }
+        .quadro6{
+            margin-left:25px;
+        }
 
         .div1{
             display:block;
@@ -180,9 +187,9 @@
             background-color:#00b4fc;
         }
 
-        @media screen and (max-width:467px){
+        @media screen and (max-width:600px){
             body{
-                
+                background-color:red;
             }
 
             .escrita{
@@ -192,7 +199,7 @@
             .botoes{
                 color:white;
                 margin-bottom:10px;
-                
+
             }
 
             .botoes_WindowsForms{
@@ -212,6 +219,17 @@
                 margin-bottom:10px;
             }
             .quadro3{
+                margin:auto;
+            }
+            .quadro4{
+                margin:auto;
+                margin-bottom:10px;
+            }
+            .quadro5{
+                margin:auto;
+                margin-bottom:10px;
+            }
+            .quadro6{
                 margin:auto;
             }
             
@@ -344,9 +362,9 @@
             </div>
             <div class="col-sm-12" style="margin-top:10px;"></div>
             <div class="linha2 row">
-                <div class="recentes col-sm-4" style="background-image:url(../imgs/crud.png);margin-left:145px; margin-right:25px;"></div>
-                <div class="recentes col-sm-4" style="background-image:url(../imgs/meusite.png); "></div>
-                <div class="recentes col-sm-4" style="background-image:url(../imgs/JAVASC.png);margin-left:25px;"></div>
+                <div class="recentes quadro4 col-sm-4" style="background-image:url(../imgs/crud.png);"></div>
+                <div class="recentes quadro5 col-sm-4" style="background-image:url(../imgs/meusite.png); "></div>
+                <div class="recentes quadro6 col-sm-4" style="background-image:url(../imgs/JAVASC.png);"></div>
             </div>
 
         </div>

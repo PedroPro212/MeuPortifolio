@@ -16,14 +16,10 @@ namespace MeuPortifolio.Home
 
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
-            string a = txtNome.Text.Replace(" ", "");
-            string b = txtEmail.Text.Replace(" ", "");
-            string c = txtTel.Text.Replace(" ", "");
-            string d = sltOpcoes.Value.Replace(" ", "");
 
             if (txtNome.Text == "" || txtEmail.Text == "" || txtTel.Text == "" || sltOpcoes.Value == "")
             {
-                SiteMaster.AlertPersonalizado(this, "Os campos tem que estar preenchidos!");
+                SiteMaster.AlertPersonalizado(this, "É obrigatório todos os campos estarem preenchidos");
             }
             else
             {
