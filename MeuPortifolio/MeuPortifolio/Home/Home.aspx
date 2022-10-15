@@ -58,11 +58,11 @@
 
         .quadro{
             margin-top:100px;
-            margin-left:110px;
+            margin:auto;
             border-style:solid; 
             border-color:#03CFB0; 
             border-width:2px;
-            width:244px;
+            width:244px
         }
         .quadro:hover{
             margin-top:50px;
@@ -111,9 +111,6 @@
             border-color:white;
             border-style:solid;
         }
-        .conteudo img{
-
-        }
 
         .infor h3{
             color:white; 
@@ -147,10 +144,6 @@
         .recentes:hover{
             margin-top:15px;
             transition:margin-top 0.1s;
-        }
-
-        .img1:hover{
-            
         }
 
         .logos{
@@ -187,19 +180,53 @@
             background-color:#00b4fc;
         }
 
-        @media screen and (max-width:600px){
+        .precisa{
+            width:493px; 
+            height:215px; 
+            color:hsl(0, 50%, 50%); 
+            border-color:#00B4CC; 
+            border-style:solid;
+            border-radius:20px;
+            margin-top:70px;
+            font-family: 'Secular One', sans-serif;
+        }
+        .precisa h3{
+            text-transform:uppercase; 
+            text-align:center;
+            color:white; 
+            font-size:20px;
+            margin-top:40px;
+            margin-left:30px;
+            margin-right:30px;
+        }
+        .precisa a{
+            text-decoration:none;
+        }
+        .orcamento{
+            background-color:#386DBD; 
+            width:220px;
+            height:43px; 
+            margin-left:131px;
+            border-radius:30px; 
+            margin-top:30px;
+        }
+
+        @media screen and (max-width:750px){
             body{
-                background-color:red;
+                
             }
 
             .escrita{
                 margin-left:30px;
             }
 
+            .pedro{
+                margin:auto;
+            }
+
             .botoes{
                 color:white;
                 margin-bottom:10px;
-
             }
 
             .botoes_WindowsForms{
@@ -207,9 +234,17 @@
             }
 
             .download{
-                margin-left:90px;
+                margin:auto;
+                margin-top:10px;
             }
 
+            .quadro{
+                margin-top:10px;
+            }
+
+            .quadros{
+                margin:auto;
+            }
             .quadro1{
                 margin:auto;
                 margin-bottom:10px;
@@ -233,6 +268,24 @@
                 margin:auto;
             }
             
+            .precisa{
+                width:270px;
+                height:180px;
+            }
+            .precisa h3{
+                margin-top:20px;
+            }
+            .orcamento{
+                width:180px;
+                height:40px;
+                margin:auto;
+            }
+        }
+
+        @media screen and (min-width:751px) and (max-width:900px){
+            body{
+                background-color:orange;
+            }
         }
 
     </style>
@@ -253,7 +306,7 @@
         </div>
 
         <div class="col-sm-4"></div>
-        <div class="col-sm-4" style="margin-top:90px;">
+        <div class="pedro col-sm-4" style="margin-top:90px;">
             <div class="borda1"><img runat="server" class="perfil" src="../imgs/perfil.png" /></div>
         </div>
     </div>
@@ -366,16 +419,15 @@
                 <div class="recentes quadro5 col-sm-4" style="background-image:url(../imgs/meusite.png); "></div>
                 <div class="recentes quadro6 col-sm-4" style="background-image:url(../imgs/JAVASC.png);"></div>
             </div>
-
         </div>
     </div>
 
     <div class="container">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
-            <div class="center-block"  style="width:493px; height:215px; color:hsl(0, 50%, 50%); border-color:#00B4CC; border-style:solid; border-radius:20px; margin-top:70px; font-family: 'Secular One', sans-serif;">
-                <h3 style="text-transform:uppercase; text-align:center; color:white; font-size:20px; margin-top:40px; margin-left:30px; margin-right:30px;">Precisa de um sistema? Site, programa ou automação/bot?</h3>
-                <a href="Orcamento.aspx" style="text-decoration:none;"><div class="orcamento" style="background-color:#386DBD; width:220px; height:43px; margin-left:131px; border-radius:30px; margin-top:30px;">
+            <div class="precisa center-block">
+                <h3>Precisa de um sistema? Site, programa ou automação/bot?</h3>
+                <a href="Orcamento.aspx"><div class="orcamento">
                     <p style="text-transform:uppercase; color:white; text-align:center; padding-top:10px;">Se sim, clique aqui</p>
                 </div></a>
             </div>
