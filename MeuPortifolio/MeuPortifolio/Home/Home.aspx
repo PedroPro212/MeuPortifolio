@@ -63,7 +63,7 @@
             border-style:solid; 
             border-color:#03CFB0; 
             border-width:2px;
-            width:244px
+            width:244px;
         }
         .quadro:hover{
             margin-top:50px;
@@ -217,7 +217,7 @@
         @media screen and (max-width:480px) and (min-width:320px){
             /*Celular*/
             body{
-                background-color:red;
+                background-color:#1A1A21;
             }
 
             .escrita{
@@ -299,6 +299,10 @@
             body{
                 background-color:gray;
             }
+
+            .quadros{
+                display:flex;
+            }
         }
 
         @media screen and (min-width:1025px) and (max-width:1200px){
@@ -306,12 +310,44 @@
             body{
                 background-color:blueviolet;
             }
+
+            .quadros{
+                display:flex;
+                margin:auto;
+            }
+
+            .quadro1{
+                margin:auto;
+                margin-bottom:10px;
+            }
+            .quadro2{
+                margin:auto;
+                margin-bottom:10px;
+            }
+            .quadro3{
+                margin:auto;
+            }
+            .quadro4{
+                margin:auto;
+                margin-bottom:10px;
+            }
+            .quadro5{
+                margin:auto;
+                margin-bottom:10px;
+            }
+            .quadro6{
+                margin:auto;
+            }
         }
 
         @media screen and (min-width:1201px){
             /*Tvs*/
             body{
-                background-color:cornflowerblue;
+                background-color:#1A1A21;
+            }
+
+            .quadros{
+                display:flex;       
             }
         }
 
