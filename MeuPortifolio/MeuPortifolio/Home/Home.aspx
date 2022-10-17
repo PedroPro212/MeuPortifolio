@@ -2,8 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server" >
     
     <style>
+
         body{
-            background-color:#1A1A21;
+            /*background-color:#1A1A21;*/
             overflow-x:hidden;
         }
 
@@ -211,9 +212,12 @@
             margin-top:30px;
         }
 
-        @media screen and (max-width:750px){
+
+
+        @media screen and (max-width:480px) and (min-width:320px){
+            /*Celular*/
             body{
-                
+                background-color:red;
             }
 
             .escrita{
@@ -282,9 +286,32 @@
             }
         }
 
-        @media screen and (min-width:751px) and (max-width:900px){
+        @media screen and (min-width:481px) and (max-width:768px){
+            /*Tablet*/
             body{
                 background-color:orange;
+            }
+
+        }
+
+        @media screen and (min-width:769px) and (max-width:1024px){
+            /*Laptop*/
+            body{
+                background-color:gray;
+            }
+        }
+
+        @media screen and (min-width:1025px) and (max-width:1200px){
+            /*Desktops*/
+            body{
+                background-color:blueviolet;
+            }
+        }
+
+        @media screen and (min-width:1201px){
+            /*Tvs*/
+            body{
+                background-color:cornflowerblue;
             }
         }
 
