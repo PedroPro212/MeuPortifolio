@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="MeuPortifolio.Home.Home" %>
+﻿
+<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="MeuPortifolio.Home.Home" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server" >
     
     <style>
@@ -289,7 +290,7 @@
         @media screen and (min-width:481px) and (max-width:768px){
             /*Tablet*/
             body{
-                background-color:orange;
+                background-color:#1A1A21;
             }
 
         }
